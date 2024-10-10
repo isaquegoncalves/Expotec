@@ -1,0 +1,99 @@
+/*......IMPORTAÇÕES.......*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-color: antiquewhite;
+    margin: 0px;
+}
+
+label {
+    position: absolute;
+}
+
+/*-------MENU LATERAL-------*/
+    #icone-menu {
+        display: block;
+        background-color: rgb(137, 207, 209);
+    }
+
+    #barra-superior {
+        width: 50px;
+        height: 2px;
+        background-color: black;
+    }
+
+    nav {
+        transition: all ease 0.5s;
+        transform: translateX(-260px);
+
+        color: azure;
+        width: 250px;
+        background-color: rgb(31, 31, 31);
+    }
+
+    input:checked ~ nav {
+        transition: all ease 0.5s;
+        
+        transform: translateX(0px);
+    }
+
+    nav > h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    nav > ul {
+        font-family: Arial, Helvetica, sans-serif;
+        list-style: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 30px;
+    }
+
+    ul > hr {
+        height: 0.1px;
+        border-style: none;
+        background-color: azure;
+    }
+/*-------MENU LATERAL(END)-------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 700px;
+}
+
+#fundo-inicio {
+    filter: brightness(0.6);
+    position: absolute;
+    background-color: blue;
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent 50%, #212121 99%), url('../imagens/fundo-index.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header > h2 {
+    font-family: 'oswald', sans-serif;
+    font-size: 90px;
+    font-weight: normal;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    position: relative;
+    margin: 10px;
+}
+
+header h3 {
+    position: relative;
+    text-align: center;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 40px;
+    color: aliceblue;
+    font-weight: 300;
+    text-shadow: 1px 1px 4px black;
+}
