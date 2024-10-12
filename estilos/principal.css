@@ -9,28 +9,72 @@ body {
 }
 
 label {
-    position: absolute;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
 }
+
 
 /*-------MENU LATERAL-------*/
     #icone-menu {
+        background-color: rgba(137, 207, 209, 0.562);
+        cursor: pointer;
         display: block;
-        background-color: rgb(137, 207, 209);
+        position: fixed;
+        z-index: 2;
+
+        margin: 10px;
+        height: 50px;
+        width: 50px;
     }
 
     #barra-superior {
-        width: 50px;
+        position: absolute;
+        top: 10px;
+
+        display: block;
+        width: 40px;
         height: 2px;
-        background-color: black;
+        background-color: rgb(255, 0, 0);
+    }
+
+    #barra-central {
+        position: absolute;
+        top: 20px;
+
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: rgb(255, 0, 0);
+    }
+
+    #barra-inferior {
+        position: absolute;
+        top: 30px;
+
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: rgb(255, 0, 0);
     }
 
     nav {
         transition: all ease 0.5s;
         transform: translateX(-260px);
+        position: relative;
+        
 
         color: azure;
         width: 250px;
         background-color: rgb(31, 31, 31);
+    }
+
+    input {
+        display: none;
+        visibility: hidden;
+        width: 50px;
+        height: 50px;
     }
 
     input:checked ~ nav {
@@ -76,6 +120,7 @@ header {
     background-image: linear-gradient(to bottom, transparent 50%, #212121 99%), url('../imagens/fundo-index.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 header > h2 {
@@ -86,6 +131,7 @@ header > h2 {
     text-shadow: 1px 1px 4px black;
     position: relative;
     margin: 10px;
+    z-index: 1;
 }
 
 header h3 {
@@ -96,4 +142,111 @@ header h3 {
     color: aliceblue;
     font-weight: 300;
     text-shadow: 1px 1px 4px black;
+    z-index: 1;
 }
+
+#divisor { /*Background-image #5f5f5f, #141414*/
+    background-image: linear-gradient(to top, #804141 20%, #4a772d 90%);
+    width: 100%;
+    height: 80px;
+}
+
+/*-------MAIN--------*/
+    main {
+        background-color: white;
+        padding: 17px;
+    }
+
+    main h2 {
+        margin: 0px;
+        margin-top: 10px;
+        font-family: 'oswald';
+        font-size: 40px;
+        font-weight: 400;
+        color: black;
+    }
+
+    main p {
+        font-family: 'alumni sans';
+        font-weight: 300;
+        font-size: 25px;
+        text-indent: 20px;
+        padding: 0px;
+        color: black;
+    }
+    
+    .poster-alimentos {
+        background-image: url('../imagens/alimentos-saudaveis.jpg');
+        background-size: cover;
+        
+        height: 280px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .poster-alimentos > img {
+        width: 100%;
+    }
+
+    .titulo-poster {
+        color: white;
+        filter: brightness(1);
+        font-family: 'oswald';
+        font-weight: 400;
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .texto-poster {
+        color: white;
+        text-align: center;
+        font-family: 'alumni sans';
+        font-size: 25px;
+        font-weight: 400;
+        margin-top: 0px;
+    }
+
+    .poster-alimentos > h2, p {
+        margin: 15px 0px;
+        padding: 0px 20px;
+    }
+
+    section {
+        background-color: #f5f5f5;
+        text-align: center;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .banner-section {
+        width: 100%;
+    }
+
+    .banner-section > img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .botao {
+        background-color: #212121;
+        border-radius: 50px;
+        color: white;
+        font-family: 'oswald';
+        font-size: 17px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 10px;
+        width: 150px;
+    }
+
+    i {
+        font-size: 19px;
+        margin-left: 7px;
+    }
