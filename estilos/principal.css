@@ -29,6 +29,11 @@ label > a {
     font-size: 35px;
 }
 
+label span {
+    font-size: 14px;
+    font-weight: 200;
+}
+
 
 /*-------MENU LATERAL-------*/
     #icone-menu {
@@ -188,6 +193,15 @@ header h3 {
         color: black;
     }
 
+    main h3 {
+        margin: 0px;
+        margin-top: 10px;
+        font-family: 'oswald';
+        font-size: 25px;
+        font-weight: 400;
+        color: black;
+    }
+
     main p {
         font-family: 'alumni sans';
         font-weight: 300;
@@ -246,7 +260,7 @@ header h3 {
 
     section p {
         text-align: left;
-    text-align: justify;
+        text-align: justify;
     }
 
     .banner-section {
@@ -255,6 +269,8 @@ header h3 {
 
     .banner-section > img {
         width: 100%;
+        min-width: 180px;
+        height: 100%;
         border-radius: 8px;
     }
 
