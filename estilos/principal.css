@@ -258,6 +258,11 @@ header h3 {
         margin: 20px auto;
     }
 
+    ul.lista-post {
+        font-family: 'alumni sans';
+        font-size: 25px;
+    }
+
     section p {
         text-align: left;
         text-align: justify;
