@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 
 body {
-    background-color: #faebd7;
+    background-color: rgb(231, 231, 231);
     margin: 0px;
 }
 
@@ -19,9 +19,8 @@ label {
 }
 
 label > a {
-    margin: 0px;
     position: absolute;
-    left: 40%;
+    left: 38%;
     top: 5%;
     color: rgb(255, 255, 255);
     font-family: 'oswald';
@@ -138,7 +137,7 @@ header {
 }
 
 #fundo-inicio {
-    filter: brightness(0.6);
+    filter: brightness(0.3);
     position: absolute;
     background-color: blue;
     height: 700px;
@@ -179,6 +178,8 @@ header h3 {
 
 /*-------MAIN--------*/
     main {
+        margin: auto;
+        max-width: 900px;
         background-color: white;
         padding: 17px;
         padding-top: 80px;
@@ -269,12 +270,28 @@ header h3 {
     }
 
     .banner-section {
+        margin: auto;
         width: 100%;
+        max-width: 230px;
     }
 
     .banner-section > img {
         width: 100%;
         min-width: 180px;
+        max-width: 230px;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    .banner-post {
+        margin: auto;
+        max-width: 600px;
+    }
+
+    .banner-post > img {
+        width: 100%;
+        min-width: 180px;
+        max-width: 600px;
         height: 100%;
         border-radius: 8px;
     }
@@ -298,4 +315,39 @@ header h3 {
     i {
         font-size: 19px;
         margin-left: 7px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        body {
+            background-color: rgb(231, 231, 231);
+        }
+
+        label > a {
+            left: 45%;
+        }
+        
+        main > h2 {
+            text-align: center;
+        }
+
+        .banner-section {
+            max-width: 290px;
+            margin: 0px;
+        }
+    
+        .banner-section > img {
+            max-width: 290px;
+        }
+
+        .section-text { /*Tem que arrumar (Não ta funcionando)*/
+            padding: 20px;
+        }
+
+        .section-text h2 {
+            font-size: 40px;
+        }
+
+        .section-text p {
+            font-size: 28px;
+        }
     }
