@@ -259,8 +259,9 @@ header h3 {
         margin: 20px auto;
     }
 
-    ul.lista-post {
+    .lista-post {
         font-family: 'alumni sans';
+        font-weight: 300;
         font-size: 25px;
     }
 
