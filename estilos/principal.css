@@ -11,7 +11,7 @@ body {
 label {
     position: fixed;
     background-color: rgb(32, 32, 32);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.267);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.333);
     display: block;
     width: 100%;
     height: 65px;
@@ -80,15 +80,57 @@ label span {
 
     nav {
         transition: all ease 0.5s;
-        transform: translateX(-260px);
+        transform: translateX(-360px);
         position: absolute;
 
         color: azure;
         border-right-style: solid;
-        border-right-width: 1px;
-        border-right-color: #5f5f5f;
-        width: 250px;
-        background-color: rgb(31, 31, 31);
+        border-right-width: 8px;
+        border-right-color: #2d2d2d;
+        border-bottom-right-radius: 15px;
+
+        margin-top: 65px;
+
+        width: 350px;
+        background-color: #1f1f1f;
+    }
+
+    /*===============NAVS TEMATICOS=================*/
+        nav#bio-alimentacao {
+            background-color: #0b2a0b;
+            border-color: #124212;
+        }
+
+        nav#bio-alimentacao .fundo-nav {
+            background-color: #0a220a;
+        }
+
+
+
+        nav#nutricao {
+            background-color: #79501b;
+            border-color: #8f6732;
+        }
+
+        nav#nutricao .fundo-nav {
+            background-color: #91672f;
+        }
+
+
+        nav#fitness {
+            background-color: #0a1864;
+            border-color: #1a41ad;
+        }
+
+        nav#fitness .fundo-nav {
+            background-color: #132886;
+        }
+    /*==============================================*/
+    
+
+    nav i {
+        font-size: 26px;
+        padding-right: 5px;
     }
 
     input {
@@ -108,9 +150,10 @@ label span {
         transform: rotate(45deg);
     }
 
-    nav > h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    nav h1 {
+        font-family: 'alumni sans';
         text-align: center;
+        font-size: 40px;
     }
 
     nav > ul {
@@ -121,11 +164,78 @@ label span {
         line-height: 30px;
     }
 
+    .fundo-nav {
+        background-color: #262626;
+        border-radius: 8px;
+        padding: 5px;
+    }
+
+    ul li {
+        background-color: rgba(242, 255, 60, 0);
+        
+        border-left-style: solid;
+        border-color: #f5f5f5;
+        border-width: 1px;
+    }
+
     ul > hr {
         height: 0.1px;
         border-style: none;
         background-color: azure;
     }
+
+    ul div.fundo {
+        width: 0px;
+        background-color: #f5f5f5;
+        transition: width 300ms ease-out;
+    }
+
+    ul a {
+        color: var(--branco_fumaca);
+        background-color: rgba(247, 234, 245, 0);
+        
+        font-family: 'oswald';
+        text-align: left;
+        font-size: 27px;
+        text-wrap: nowrap;
+        text-decoration: none;
+
+        padding-left: 15px;
+        margin: 25px auto;
+        display: block;
+        
+        height: 37px;
+        align-content: center;
+
+        transition: color 250ms ease-out, padding-left 350ms ease-in-out;
+    }
+
+    /*--------ANIMAÃ‡ÃƒO DOS BOTÃ•ES DO MENU(start)----------*/
+        ul li:hover > div.fundo {
+            background-color: #f5f5f5;
+            width: 95%;
+        }
+
+        ul li:hover > div.fundo > a {
+            color: #1e1e1e;
+            padding-left: 25px;
+        }
+
+        ul li:hover > div.fundo > a#bio-alimentacao {
+            color: #037005;
+            padding-left: 25px;
+        }
+
+        ul li:hover > div.fundo > a#fitness {
+            color: #0072dd;
+            padding-left: 25px;
+        }
+
+        ul li:hover > div.fundo > a#nutricao {
+            color: #a07236;
+            padding-left: 25px;
+        }
+    /*--------ANIMAÃ‡ÃƒO DOS BOTÃ•ES DO MENU(end)----------*/
 /*-------MENU LATERAL(END)-------*/
 
 header {
@@ -350,5 +460,25 @@ header h3 {
 
         .section-text p {
             font-size: 28px;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        nav {
+            transform: translateX(0px);
+            width: 17.5%;
+            height: 500px;
+        }
+
+        nav a{
+            font-size: 23px;
+        }
+
+        label nav {
+            visibility: hidden;
+        }
+
+        #icone-menu {
+            visibility: hidden;
         }
     }
