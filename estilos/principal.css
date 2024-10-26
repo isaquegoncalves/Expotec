@@ -280,8 +280,14 @@ header h3 {
     z-index: 1;
 }
 
-#divisor { /*Background-image #5f5f5f, #141414*/
-    background-image: linear-gradient(to top, #696969 10%, #141414 90%);
+#divisor1 { /*Background-image #5f5f5f, #141414*/
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    height: 280px;
+}
+
+#divisor2 {
+    background-image: linear-gradient(to top, #5e5e5e 50%, rgb(10, 10, 10) 99%);
     width: 100%;
     height: 80px;
 }
@@ -345,6 +351,7 @@ header h3 {
         font-size: 38px;
         text-align: center;
         margin-bottom: 0px;
+        padding: 0px 20px;
     }
 
     .texto-poster {
@@ -428,6 +435,10 @@ header h3 {
         margin-left: 7px;
     }
 
+    strong {
+        font-weight: 600;
+    }
+
     @media screen and (min-width: 1200px) {
         body {
             background-color: rgb(231, 231, 231);
@@ -436,9 +447,38 @@ header h3 {
         label > a {
             left: 45%;
         }
+
+        header h2 {
+            font-size: 150px;
+        }
+
+        header h3 {
+            font-size: 50px;
+        }
         
         main > h2 {
             text-align: center;
+        }
+
+        #divisor1 {
+            height: 340px;
+        }
+
+        #divisor2 {
+            height: 200px;
+        }
+
+        div.poster-alimentos {
+            height: 550px;
+        }
+
+        .titulo-poster {
+            font-size: 80px;
+        }
+
+        .texto-poster {
+            font-size: 40px;
+            padding: 0px 70px;
         }
 
         .banner-section {
