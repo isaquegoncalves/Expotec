@@ -6,6 +6,7 @@
 body {
     background-color: rgb(231, 231, 231);
     margin: 0px;
+    min-width: 340px;
 }
 
 label {
@@ -253,6 +254,7 @@ header {
         background-color: blue;
         height: 700px;
         width: 100%;
+        min-width: 340px;
         background-image: linear-gradient(to bottom, transparent 50%, #212121 99%), url('../imagens/fundo-index.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -268,7 +270,7 @@ header {
 
     header > h2 {
         font-family: 'oswald', sans-serif;
-        font-size: 90px;
+        font-size: 80px;
         font-weight: normal;
         color: white;
         text-shadow: 1px 1px 4px black;
